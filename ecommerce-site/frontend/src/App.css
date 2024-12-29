@@ -1,0 +1,75 @@
+/* General Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scrolling */
+  font-family: Arial, sans-serif;
+  color: #000; /* Set the default font color to black */
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  color: #fff; /* Title color set to white for better contrast */
+  padding: 15px 20px;
+  text-align: center;
+  position: sticky; /* Sticky header for better UX */
+  top: 0;
+  z-index: 1000;
+  font-size: 24px; /* Set font size for the header */
+  font-weight: bold; /* Make the header bold */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: #fff; /* Set navbar link color to white */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px; /* Add padding to make it more clickable */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+.navbar a:hover {
+  background-color: #ff758c; /* Background change on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1; /* Ensures the content area takes remaining space */
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto; /* Enable scrolling if needed */
+  color: #333; /* Set main content text color to dark gray for readability */
+  line-height: 1.6; /* Improve readability with proper line spacing */
+}
+
+/* Additional Styling */
+h1, h2, h3, h4 {
+  color: #000; /* Ensure all headings are black */
+  font-weight: bold; /* Make headings bold */
+  margin-bottom: 15px; /* Space below headings */
+}
+
+p {
+  color: #333; /* Paragraph text in dark gray for contrast */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
